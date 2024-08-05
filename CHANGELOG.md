@@ -12,6 +12,45 @@ Please add your entries in this format:
 
 In the current stage we aim to release a new version at least every month.
 
+## 4.1.0
+
+Released: 2024-07-30
+
+| Package              | Version | Package              | Version |
+| -------------------- | ------- | -------------------- | ------- |
+| @uppy/audio          |   2.0.1 | @uppy/status-bar     |   4.0.1 |
+| @uppy/aws-s3         |   4.0.2 | @uppy/store-default  |   4.1.0 |
+| @uppy/compressor     |   2.0.1 | @uppy/transloadit    |   4.0.1 |
+| @uppy/core           |   4.1.0 | @uppy/utils          |   6.0.1 |
+| @uppy/dashboard      |   4.0.2 | @uppy/webcam         |   4.0.1 |
+| @uppy/remote-sources |   2.1.0 | uppy                 |   4.1.0 |
+
+- @uppy/remote-sources: fix options type (Merlijn Vos / #5364)
+- @uppy/transloadit: do not mark `opts` as mandatory (Antoine du Hamel / #5375)
+- @uppy/compressor: mark `quality` as optional (Antoine du Hamel / #5374)
+- @uppy/aws-s3: improve error when `endpoint` is not provided (Antoine du Hamel / #5361)
+- @uppy/core,@uppy/store-default: export `Store` type (Merlijn Vos / #5373)
+- @uppy/dashboard: make `toggleAddFilesPanel` args consistent (Evgenia Karunus / #5365)
+- @uppy/dashboard: Dashboard - convert some files to typescript (Evgenia Karunus / #5359)
+- @uppy/audio,@uppy/webcam: Don't use `<h1>` in Uppy markup (Evgenia Karunus / #5355)
+- @uppy/status-bar: GoldenRetriever + `hideUploadButton=true` (Evgenia Karunus / #5350)
+- meta: Bump docker/build-push-action from 6.3.0 to 6.4.1 (dependabot[bot] / #5360)
+
+
+## 4.0.5
+
+Released: 2024-07-18
+
+| Package          | Version | Package          | Version |
+| ---------------- | ------- | ---------------- | ------- |
+| @uppy/aws-s3     |   4.0.1 | uppy             |   4.0.5 |
+| @uppy/xhr-upload |   4.0.2 |                  |         |
+
+- @uppy/aws-s3: use default `Body` generic & export `AwsBody` (Merlijn Vos / #5353)
+- @uppy/xhr-upload: bring back getResponseData (Merlijn Vos / #5354)
+- @uppy/aws-s3: only send `PartNumber` and `ETag` in completion request (Antoine du Hamel / #5356)
+
+
 ## 4.0.4
 
 Released: 2024-07-15

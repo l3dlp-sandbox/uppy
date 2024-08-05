@@ -1,5 +1,20 @@
 # @uppy/aws-s3
 
+## 4.0.2
+
+Released: 2024-07-30
+Included in: Uppy v4.1.0
+
+- @uppy/aws-s3: improve error when `endpoint` is not provided (Antoine du Hamel / #5361)
+
+## 4.0.1
+
+Released: 2024-07-18
+Included in: Uppy v4.0.5
+
+- @uppy/aws-s3: use default `Body` generic & export `AwsBody` (Merlijn Vos / #5353)
+- @uppy/aws-s3: only send `PartNumber` and `ETag` in completion request (Antoine du Hamel / #5356)
+
 ## 4.0.0
 
 Released: 2024-07-10
